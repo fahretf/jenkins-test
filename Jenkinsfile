@@ -22,7 +22,7 @@ pipeline {
                fi
                
                
-              sudo docker run --name nodejs -p 3000:3000 -d nodejs-app
+              docker run --name nodejs -p 3000:3000 -d nodejs-app
             '''
          }
       }
