@@ -16,9 +16,9 @@ pipeline {
             echo 'Deploying Container...'
             sh '''
 
-               if [ "$(docker ps -q --filter name=nodejs)" ]; then
-                   docker stop nodejs
-                   docker rm nodejs
+               if [ "$(docker ps -q --filter name=nodejs-app)" ]; then
+                   docker stop nodejs-app
+                   docker rm nodejs-app
                fi
                
                
